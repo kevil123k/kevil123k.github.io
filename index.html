@@ -181,7 +181,7 @@
       <div class="text-center lg:text-left py-8 lg:py-16">
         <div class="fade-up d1 inline-flex items-center gap-2 bg-white border border-[#dbe0e6] text-[#137fec] text-xs font-semibold px-3.5 py-1.5 rounded-full mb-6 shadow-sm">
           <span class="live-dot w-2 h-2 bg-green-500 rounded-full"></span>
-          Markets Live &nbsp;·&nbsp; NSE &amp; BSE
+          Markets Live &nbsp;·&nbsp; NSE, BSE &amp; MCX
         </div>
 
         <h1 class="fade-up d2 text-[40px] sm:text-5xl lg:text-[54px] font-black text-[#111418] leading-[1.08] tracking-tight mb-5">
@@ -339,9 +339,6 @@
 
     <!-- Compliance badges -->
     <div class="flex flex-wrap items-center justify-center gap-3">
-      <div class="flex items-center gap-2 bg-white border border-[#dbe0e6] px-4 py-2.5 rounded-full text-xs font-semibold text-[#617589] shadow-sm">
-        <span class="material-symbols-outlined text-[16px] text-[#137fec]">account_balance</span>NSE &amp; BSE <strong>Member</strong>
-      </div>
       <div class="flex items-center gap-2 bg-white border border-[#dbe0e6] px-4 py-2.5 rounded-full text-xs font-semibold text-[#617589] shadow-sm">
         <span class="material-symbols-outlined text-[16px] text-[#137fec]">lock</span>256-bit SSL
       </div>
@@ -513,12 +510,18 @@
           </thead>
           <tbody class="bg-white">
             <tr class="border-b border-[#dbe0e6] hover:bg-blue-50/30 transition-colors">
-              <td class="px-5 py-4 font-semibold text-[#111418]">Equity Delivery</td>
+              <td class="px-5 py-4">
+                <div class="font-semibold text-[#111418]">Equity Delivery</div>
+                <div class="text-xs text-orange-500 font-medium mt-0.5">Up to 100× leverage</div>
+              </td>
               <td class="px-5 py-4 text-center text-[#617589]">NSE / BSE</td>
               <td class="px-5 py-4 text-right font-bold text-[#137fec]">0.02 paisa per side*</td>
             </tr>
             <tr class="border-b border-[#dbe0e6] hover:bg-blue-50/30 transition-colors">
-              <td class="px-5 py-4 font-semibold text-[#111418]">Equity Intraday</td>
+              <td class="px-5 py-4">
+                <div class="font-semibold text-[#111418]">Equity Intraday</div>
+                <div class="text-xs text-orange-500 font-medium mt-0.5">Up to 100× leverage</div>
+              </td>
               <td class="px-5 py-4 text-center text-[#617589]">NSE / BSE</td>
               <td class="px-5 py-4 text-right font-bold text-[#137fec]">0.02 paisa per side*</td>
             </tr>
@@ -537,6 +540,14 @@
               </td>
               <td class="px-5 py-4 text-center text-[#617589]">NSE</td>
               <td class="px-5 py-4 text-right font-bold text-[#137fec]">₹2 per lot</td>
+            </tr>
+            <tr class="border-b border-[#dbe0e6] hover:bg-blue-50/30 transition-colors">
+              <td class="px-5 py-4">
+                <div class="font-semibold text-[#111418]">Commodities</div>
+                <div class="text-xs text-orange-500 font-medium mt-0.5">Up to 100× leverage</div>
+              </td>
+              <td class="px-5 py-4 text-center text-[#617589]">MCX</td>
+              <td class="px-5 py-4 text-right font-bold text-[#137fec]">0.02 paisa per side*</td>
             </tr>
             <tr class="hover:bg-blue-50/30 transition-colors">
               <td class="px-5 py-4 font-semibold text-[#111418]">Account Opening</td>
@@ -559,15 +570,15 @@
           <tbody>
             <tr class="border-b border-[#dbe0e6] hover:bg-orange-50/30 transition-colors">
               <td class="px-5 py-3.5 font-semibold text-[#111418]">Cash &amp; Futures</td>
-              <td class="px-5 py-3.5 text-right font-bold text-orange-500">5% per annum</td>
+              <td class="px-5 py-3.5 text-right font-bold text-orange-500">5%</td>
             </tr>
             <tr class="border-b border-[#dbe0e6] hover:bg-orange-50/30 transition-colors">
               <td class="px-5 py-3.5 font-semibold text-[#111418]">Options Holding</td>
-              <td class="px-5 py-3.5 text-right font-bold text-orange-500">20% per annum</td>
+              <td class="px-5 py-3.5 text-right font-bold text-orange-500">20%</td>
             </tr>
             <tr class="hover:bg-orange-50/30 transition-colors">
               <td class="px-5 py-3.5 font-semibold text-[#111418]">MCX Holding</td>
-              <td class="px-5 py-3.5 text-right font-bold text-orange-500">5% per annum</td>
+              <td class="px-5 py-3.5 text-right font-bold text-orange-500">5%</td>
             </tr>
           </tbody>
         </table>
