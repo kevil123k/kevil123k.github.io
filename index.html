@@ -144,6 +144,10 @@
         <a href="#platforms"    class="hover:text-[#137fec] transition-colors">Platforms</a>
         <a href="#faq"          class="hover:text-[#137fec] transition-colors">Learn</a>
         <a href="#footer"       class="hover:text-[#137fec] transition-colors">About</a>
+        <a href="#" data-install-href
+           class="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-600 hover:text-emerald-700 transition-colors">
+          <span class="material-symbols-outlined text-[16px]">install_mobile</span>Install App
+        </a>
       </nav>
 
       <!-- CTA buttons -->
@@ -166,6 +170,10 @@
     <a href="#platforms"    onclick="closeMenu()" class="block px-3 py-2.5 text-sm font-medium text-[#617589] hover:text-[#137fec] hover:bg-blue-50 rounded-xl transition-colors">Platforms</a>
     <a href="#faq"          onclick="closeMenu()" class="block px-3 py-2.5 text-sm font-medium text-[#617589] hover:text-[#137fec] hover:bg-blue-50 rounded-xl transition-colors">Learn</a>
     <a href="#footer"       onclick="closeMenu()" class="block px-3 py-2.5 text-sm font-medium text-[#617589] hover:text-[#137fec] hover:bg-blue-50 rounded-xl transition-colors">About</a>
+    <a href="#" data-install-href onclick="closeMenu()"
+       class="flex items-center gap-2 px-3 py-2.5 text-sm font-semibold text-emerald-600 hover:bg-emerald-50 rounded-xl transition-colors">
+      <span class="material-symbols-outlined text-[18px]">install_mobile</span>Install App
+    </a>
     <div class="pt-3 flex flex-col gap-2 pb-1">
       <a href="https://trade.wolfkrypt.me/login"  class="text-center text-sm font-bold border-2 border-[#137fec] text-[#137fec] py-2.5 rounded-xl hover:bg-blue-50 transition-colors">Login</a>
       <a href="https://trade.wolfkrypt.me/signup" class="text-center text-sm font-bold bg-[#137fec] text-white py-2.5 rounded-xl hover:bg-blue-600 transition-colors">Open Free Account</a>
@@ -886,6 +894,16 @@
      JAVASCRIPT
 ===================================================== -->
 <script>
+  // ── App Config — update this URL when shifting domains ──────────────────────
+  const APP_CONFIG = {
+    appUrl: 'https://trade.wolfkrypt.me',
+  };
+
+  // Set all install-app hrefs from config so there's one place to change
+  document.querySelectorAll('[data-install-href]').forEach(el => {
+    el.href = APP_CONFIG.appUrl + '/?install=true';
+  });
+
   // Mobile menu
   const menuBtn = document.getElementById('menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
